@@ -1,0 +1,1 @@
+* * * * * python /home/jovyan/dump_postgres_with_spark.py >> /var/log/cron.log 2>&1
