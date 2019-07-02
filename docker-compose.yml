@@ -49,3 +49,10 @@ services:
       - postgres
     volumes:
       - ./jupyter-local/notebooks:/home/jovyan/work
+  py-by-cron:
+    build: ./py-by-cron
+    links:
+      - kafka
+      - postgres
+    volumes:
+      - ./py-by-cron:/home/jovyan
